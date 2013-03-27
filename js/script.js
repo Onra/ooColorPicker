@@ -10,7 +10,7 @@ $(document).ready(function() {
 		handleFileSelect(evt);
 	});
 
-	$("#canvas").click(function(event) {
+	$("#canvas").mousemove(function(event) {
 		var x = event.pageX - this.offsetLeft;
 		var y = event.pageY - this.offsetTop;
 
@@ -28,6 +28,7 @@ $(document).ready(function() {
 		$("#hex-color").text("HEX Color : #" + hex);
 
 		$(".color-sample").css("background-color", "#" + hex);
+		$(".color-sample").css("outline", "5px #" + hex + " dashed");
 	});
 });
 
@@ -83,8 +84,14 @@ function showImage() {
 	console.log("show");
 	$(".btn-upload").button('reset');
 	$(".btn-upload").hide();
-	$("#canvas").show();
-	$(".after-image-uploaded").show();
+
+	$("#canvas").slideDown('slow', function() {
+		$(".after-image-uploaded").slideDown('slow');
+	});
+	// $("#canvas").show();
+
+
+	// $(".after-image-uploaded").show();
 }
 
 function notAnImage() {
