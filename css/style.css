@@ -12,6 +12,5 @@
 
 .canvas {
 	outline: 10px #bbbbbb dashed;
-	/*border: 10px #bbbbbb solid;
-	border-style: dashed;*/
+	cursor: crosshair
 }
