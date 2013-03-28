@@ -37,6 +37,7 @@ function handleFileSelect(evt) {
 	var uploadedImage = files[0];
 
 	if (!uploadedImage.type.match('image.*')) {
+		notAnImage();
 		return;
 	}
 
@@ -90,16 +91,12 @@ function showImage() {
 	$("#canvas").slideDown('slow', function() {
 		$(".after-image-uploaded").slideDown('slow');
 	});
-	// $("#canvas").show();
-
-
-	// $(".after-image-uploaded").show();
 }
 
 function notAnImage() {
 	$("#not-an-image").show();
+	$(".btn-upload").button('reset');
 	$(".btn-upload").text("Try again");
-	// $(".alert").alert();
 }
 
 function rgbToHex(R,G,B) {
