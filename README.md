@@ -1,9 +1,9 @@
 ooColorPicker
 =============
 
-![ScreenShot](http://www.onrabox.com/ooColorPicker/ooColorPickerScreenshot.png)
-
 HTML5 Image uploader &amp; Color picker
+
+![ScreenShot](http://www.onrabox.com/ooColorPicker/ooColorPickerScreenshot.png)
 
 ## Open issues
 - Image display randomly failed 
