@@ -8,7 +8,7 @@ Démo : http://www.onrabox.com/ooColorPicker/
 ![ScreenShot](http://www.onrabox.com/ooColorPicker/ooColorPickerScreenshot.png)
 
 ## Open issues
-- Image display randomly failed 
+- ~~Image display randomly failed~~
 
 ## Todos
 - Double tapping for zooming ?
